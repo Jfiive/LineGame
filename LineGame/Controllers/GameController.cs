@@ -10,6 +10,7 @@ namespace LineGame.Controllers
 {
     public class GameController : ApiController
     {
+        //can either use a private static varibale representing what nodes have been clicked already or can use session caching to store what has already been clicked
         public IHttpActionResult Initialize()
         {
             //link for information https://docs.microsoft.com/en-us/aspnet/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api
