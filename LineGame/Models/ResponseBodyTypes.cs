@@ -9,6 +9,18 @@ namespace LineGame.Models
     {
         public int x { get; set; }
         public int y { get; set; }
+
+        public bool IsSame(Point Check)
+        {
+            if (x == Check.x && y == Check.y)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 
     public class Line
