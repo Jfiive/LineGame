@@ -19,6 +19,10 @@ namespace LineGame.Models
     }
     public class ServerResponse
     {
+        public ServerResponse()
+        {
+            body = new State_Update();
+        }
         public string msg { get; set; }
         public State_Update body { get; set; }
     }
